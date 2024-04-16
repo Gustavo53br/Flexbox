@@ -68,6 +68,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid white;
 }
 .menu a {
   color: white;
@@ -99,7 +100,19 @@ a {
   max-width: 1280px;
   margin: 0 auto;
   padding: 60px 0px;
+ 
 }
+section#introducao {
+  display: flex;
+  width: 1281px;
+  margin: 0 auto;
+  align-items: center;
+}
+.col-2-2 {
+  width: 64%;
+  opacity: 0.5;
+}
+
 .introducao-p1 p {
   font-size: 1.25em;
   line-height: 1.4;
@@ -113,6 +126,7 @@ a {
   padding: 60px 0;
   display: flex;
   flex-wrap: wrap;
+  
 }
 .sobre {
   max-width: 1280px;
@@ -159,7 +173,7 @@ a {
 }
 
 .produtos-item {
-  flex: 1 1 175px;
+  flex: 1 1 400px;
   margin: 10px;
 }
 
@@ -189,9 +203,10 @@ a {
   flex-wrap: wrap;
 }
 .preco-item {
-  flex: 1;
-  border: 4px solid white;
-  padding: 20px;
+  display: flex;
+  padding: 10px;
+  gap: 1rem;
+  align-items: center;
   margin: 10px;
 }
 .preco-item h2 {
@@ -296,77 +311,51 @@ a {
   line-height: 1.4;
   color: #7c7c7c;
 }
-.newsletter {
-  background: #f7f7f7;
-  padding: 60px calc((100% - 1280px) / 2);
-  display: flex;
-  flex-wrap: wrap;
-}
 
-.newsletter-info {
-  flex: 1 1 260px;
-  margin: 0 10px;
-}
-.newsletter-info h1 {
-  font-size: 3em;
-  color: #a4a4a4;
-}
-.newsletter-info p {
-  font-size: 1.25em;
-  font-style: italic;
-  max-width: 230px;
-  color: #7c7c7c;
-  margin-bottom: 10px;
-}
-
-.newsletter-form {
-  flex: 2 1 260px;
-  flex-wrap: wrap;
-  align-self: center;
-  display: flex;
-  flex-wrap: wrap;
-}
-.newsletter-form input {
-  flex: 3 1 260px;
-  font-size: 1.25em;
-  color: #7c7c7c;
-  font-style: italic;
-  font-family: nunito, Arial, Helvetica, sans-serif;
-  border: 4px solid #2c70ff;
-  background: transparent;
-  padding: 10px;
-  margin: 0px;
-  border-radius: 0px;
-}
-
-.newsletter-form button {
-  flex: 1 1 260px;
-  font-family: nunito, Arial, Helvetica, sans-serif;
-  font-size: 2.25em;
-  font-weight: bold;
-  text-transform: uppercase;
-  background: #2c70ff;
-  color: white;
-  margin: 0px;
-  cursor: pointer;
-  border: 0px;
-  padding: 15px 10px;
-}
-@media (max-width: 600px) {
-  .newsletter-form button {
-    font-size: 1.5em;
-  }
-}
 
 .footer {
   display: flex;
-  background: #2c70ff;
   height: 200px;
   align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: auto;
 }
-.footer p {
-  flex: 1;
+
+
+.icons-sociais ul {
+  display: flex;
+  gap: 1rem;
+  color: #ffffff;
+ 
+}
+
+li#icon-s {
+  width: 25px;
+  background: white;
+  color: black;
   text-align: center;
-  font-size: 2.25em;
-  color: #122ab2;
+  height: 25px;
 }
+
+li#icon-s:hover {
+  width: 25px;
+  background: rgb(0, 0, 0);
+  color: #C2F80E;
+  border: 1px solid white;
+  text-align: center;
+  height: 25px;
+}
+
+.wpp {
+  position: fixed;
+  width: 75px;
+  right: 0;
+  bottom: 0;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+}
+
+
+
+

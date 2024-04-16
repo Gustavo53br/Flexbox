@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" type="">
   <link rel="stylesheet" href="script.js">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <title>GB Company - Tech</title>
   <link rel="icon" type="image/x-icon" href="/Flexbox/img/favicon.svg">
 </head>
@@ -32,12 +33,22 @@
     </div>
   </header>
   <section class="introducao-p1" id="introducao">
+  <div class="col-1-2">
   <h1 class="introducao">
     Construindo o Futuro Digital
   </h1>
   <p>
-    Explore nosso portfólio de projetos inovadores que capturam a essência da tecnologia moderna. Da concepção à execução, cada projeto é uma jornada que molda o futuro digital. Descubra como nossas soluções estão transformando indústrias e impulsionando o progresso global.
+    Explore nosso portfólio de projetos inovadores que capturam a essência da tecnologia moderna.<br> 
+    Da concepção à execução, cada projeto é uma jornada que molda o futuro digital.
+    <br> Descubra como nossas soluções estão transformando indústrias e impulsionando o progresso global.
   </p>
+</div>
+<div class="col-2-2">
+  <span>
+    <img src="/Flexbox/img/metodologia-growth-driven-thinking-black.gif" alt="">
+  </span>
+</div>
+  
 </section>
   <section class="sobre" id="sobre">
     <div class="sobre-info">
@@ -49,58 +60,47 @@
   </section>
 
   <section class="produtos" id="produtos">
-    <h1>Portfólio</h1>
+    <h1>Nossos Cases</h1>
     <div class="produtos-container">
       <div class="produtos-item purple">
-        <img src="img/Captura de tela_31-3-2024_205937_www.pijamma.com.br.jpeg" alt="Produtos 1">
+        <img src="img/levmi.jpeg" alt="Produtos 1">
       </div>
       <div class="produtos-item purple">
-        <img src="img/Captura de tela_31-3-2024_205937_www.pijamma.com.br.jpeg" alt="Produtos 1">
-      </div><div class="produtos-item purple">
-        <img src="img/Captura de tela_31-3-2024_205937_www.pijamma.com.br.jpeg" alt="Produtos 1">
+        <img src="img/regina.jpeg" alt="Produtos 1">
+      </div>
+      <div class="produtos-item purple">
+        <img src="img/Captura de tela_8-4-2024_19196_imperatormenswear.com.au.jpeg" alt="Produtos 1">
+      </div>
+      <div class="produtos-item purple">
+        <img src="img/escova.jpeg" alt="Produtos 1">
+      </div>
+      <div class="produtos-item purple">
+        <img src="img/escova.jpeg" alt="Produtos 1">
+      </div>
+      <div class="produtos-item purple">
+        <img src="img/escova.jpeg" alt="Produtos 1">
+      </div>
+      <div class="produtos-item purple">
+        <img src="img/escova.jpeg" alt="Produtos 1">
+      </div>
+      <div class="produtos-item purple">
+        <img src="img/escova.jpeg" alt="Produtos 1">
+      </div>
+      <div class="produtos-item purple">
+        <img src="img/escova.jpeg" alt="Produtos 1">
       </div>
     </div>
   </section>
 
   <section class="preco" id="preco">
     <div class="preco-item">
-      <h2>Cobre</h2>
-      <span><sup>R$</sup>19</span>
-      <ul>
-        <li>Planos Ilimitados</li>
-        <li>Acesso Restrito</li>
-        <li>Conteudo Secreto</li>
-        <li>Suporte 24h</li>
-      </ul>
-      <a href="#">Comprar</a>
+      <div class="shopify"><img src="/Flexbox/img/shopify.png" alt="shopify"></div>
+      <div class="VNDA"><img src="/Flexbox/img/vnda1.png" alt="vnda"></div>
+      <div class="Tray"><img src="/Flexbox/img/tray.png" alt="tray"></div>
+      <div class="Wordpress"><img src="/Flexbox/img/wordpress.png" alt="wordpress"></div>
+      <div class="Wocommerce"><img src="/Flexbox/img/woocommerce.png" alt="Woocommerce"></div>
     </div>
-
-    <div class="preco-item">
-      <h2>Prata</h2>
-      <span><sup>R$</sup>39</span>
-      <ul>
-        <li>Planos Ilimitados</li>
-        <li>Acesso Restrito</li>
-        <li>Conteudo Secreto</li>
-        <li>Suporte 24h</li>
-        <li>Compra Exclusiva</li>
-      </ul>
-      <a href="#">Comprar</a>
-    </div>
-
-    <div class="preco-item">
-      <h2>Ouro</h2>
-      <span><sup>R$</sup>79</span>
-      <ul>
-        <li>Planos Ilimitados</li>
-        <li>Acesso Restrito</li>
-        <li>Conteudo Secreto</li>
-        <li>Suporte 24h</li>
-        <li>Compra Exclusiva</li>
-        <li>Download dos Itens</li>
-      </ul>
-      <a href="#">Comprar</a>
-    </div>
+  
   </section>
 
   <section class="qualidade" id="qualidade">
@@ -129,22 +129,33 @@
       <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão</p>
     </div>
   </section>
-  <section class="newsletter">
-    <div class="newsletter-info">
-      <h1>Newsletter</h1>
-      <p>assine e fique por dentro das novidades</p>
-    </div>
-    <form class="newsletter-form">
-      <input type="text" placeholder="Seu e-mail">
-      <button type="submit">Assinar</button>
-    </form>
+
+
+
+  <section class="footer">
+    <div><img src="img/logo.png" alt="loog-footer"></div>
+    <div><nav class="menu-nav">
+      <ul>
+        <li><a href="#sobre">About</a></li>
+        <li><a href="#produtos">Projects</a></li>
+        <li><a href="#preco">Contact</a></li>
+      </ul>
+    </nav></div>
+    <div class="icons-sociais">
+      <ul>
+        <li class="whatsapp" id="icon-s">1</li>
+        <li class="instagram"id="icon-s">2</li>
+        <li class="linkedin" id="icon-s">3</li>
+      </ul>
+        </div>
   </section>
 
-  <footer class="footer">
-    <p>FlexBlog © Todos os direitos reservados.</p>
+  
+  
 
-  </footer>
- 
+
+<div class="wpp"><a href="https://api.whatsapp.com/send?phone=5515996823970&text=Ol%C3%A1,%20gostaria%20de%20uma%20loja%20." target="_blank"><img src="/Flexbox/img/whatsapp.png" alt=""></a></div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
