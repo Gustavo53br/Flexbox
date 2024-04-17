@@ -176,7 +176,17 @@ section#introducao {
   flex: 1 1 400px;
   margin: 10px;
 }
-
+.swiper .swiper-wrapper{
+  transition-timing-function: linear;
+  align-items: center;
+}
+.swiper{
+   background-color: #222222;
+}
+div#marca img {
+  width: 160px;
+  object-fit: contain;
+}
 .produtos-item h2 {
   font-size: 3em;
   color: #a4a4a4;
